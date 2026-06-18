@@ -1,4 +1,8 @@
-import { IconNumbers, IconUsers } from '@tabler/icons-react';
+import {
+  IconArrowsLeftRight,
+  IconNumbers,
+  IconUsers,
+} from '@tabler/icons-react';
 import Logo from './Logo';
 import MenuPrincipalItem from './MenuPrincipalItem';
 import MenuPrincipalSecao from './MenuPrincipalSecao';
@@ -23,6 +27,12 @@ export default function MenuPrincipal() {
           url: '/essenciais/votacao',
           tag: 'useState',
           icone: <IconUsers />,
+        },
+        {
+          titulo: 'Requisição à API',
+          url: '/essenciais/consultaApi',
+          tag: 'useEffect',
+          icone: <IconArrowsLeftRight />,
         },
       ],
     },
