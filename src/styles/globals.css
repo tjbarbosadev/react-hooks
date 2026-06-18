@@ -1,5 +1,19 @@
 @import 'tailwindcss';
 
+
+/* Espaçamento dinâmico (Flex, Janela) */
+@source inline("gap-{0..12}");
+
+/* Layout flex (Flex e componentes futuros) */
+@source inline("flex flex-col flex-row flex-1 flex-auto flex-none flex-wrap flex-nowrap");
+@source inline("items-{start,center,end,stretch,baseline}");
+@source inline("justify-{start,center,end,between,around,evenly}");
+
+/* Tamanhos dinâmicos (Botao) */
+@source inline("h-{9,11,14,16,20,24}");
+@source inline("w-{9,11,14,16,20,24}");
+@source inline("text-{xs,sm,base,md,lg,xl,2xl,3xl}");
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

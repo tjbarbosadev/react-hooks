@@ -1,4 +1,4 @@
-import { IconNumbers } from '@tabler/icons-react';
+import { IconNumbers, IconUsers } from '@tabler/icons-react';
 import Logo from './Logo';
 import MenuPrincipalItem from './MenuPrincipalItem';
 import MenuPrincipalSecao from './MenuPrincipalSecao';
@@ -17,6 +17,12 @@ export default function MenuPrincipal() {
           url: '/essenciais/contador',
           tag: 'useState',
           icone: <IconNumbers />,
+        },
+        {
+          titulo: 'Votação',
+          url: '/essenciais/votacao',
+          tag: 'useState',
+          icone: <IconUsers />,
         },
       ],
     },
@@ -50,7 +56,7 @@ export default function MenuPrincipal() {
 
   return (
     <aside
-      className={`flex scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-zinc-800 flex-col overflow-x-hidden overflow-y-scroll bg-black shadow-md shadow-zinc-800 ${mini ? 'w-[130px] items-center' : 'w-[370px]'} `}
+      className={`flex scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-zinc-800 flex-col overflow-x-hidden overflow-y-scroll bg-black shadow-md shadow-zinc-800 ${mini ? 'w-32.5 items-center' : 'w-92.5'} `}
     >
       <Flex center className="m-7">
         {!mini && <Logo />}

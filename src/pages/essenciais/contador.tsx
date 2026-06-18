@@ -2,7 +2,7 @@ import Botao from '@/components/template/Botao';
 import Display from '@/components/template/Display';
 import Flex from '@/components/template/Flex';
 import Pagina from '@/components/template/Pagina';
-import { IconMinus, IconPlus, IconZeroConfig } from '@tabler/icons-react';
+import { IconMinus, IconPlus } from '@tabler/icons-react';
 import { useState } from 'react';
 
 export default function Contador() {
