@@ -1,5 +1,6 @@
 import {
   IconArrowsLeftRight,
+  IconMathGreater,
   IconNumbers,
   IconUsers,
 } from '@tabler/icons-react';
@@ -33,6 +34,12 @@ export default function MenuPrincipal() {
           url: '/essenciais/consultaApi',
           tag: 'useEffect',
           icone: <IconArrowsLeftRight />,
+        },
+        {
+          titulo: 'Maior',
+          url: '/essenciais/maior',
+          tag: 'useEffect',
+          icone: <IconMathGreater />,
         },
       ],
     },
