@@ -1,5 +1,6 @@
 import {
   IconArrowsLeftRight,
+  IconLetterCase,
   IconMathGreater,
   IconNumbers,
   IconUsers,
@@ -40,6 +41,12 @@ export default function MenuPrincipal() {
           url: '/essenciais/maior',
           tag: 'useEffect',
           icone: <IconMathGreater />,
+        },
+        {
+          titulo: 'Contar Caracteres',
+          url: '/essenciais/countChar',
+          tag: 'useEffect',
+          icone: <IconLetterCase />,
         },
       ],
     },
