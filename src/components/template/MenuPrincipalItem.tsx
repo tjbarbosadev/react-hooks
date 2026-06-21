@@ -20,7 +20,9 @@ export default function MenuItem(props: MenuItemProps) {
     <Link
       id={titulo}
       href={url}
-      className={`flex items-center gap-2 rounded-md px-3 py-2 text-zinc-400 hover:bg-zinc-800 ${ativo && `bg-zinc-900 text-blue-500`} `}
+      className={`flex items-center gap-2 rounded-md px-3 py-2 hover:bg-zinc-800 ${
+        ativo ? 'bg-zinc-900 text-blue-500' : 'text-zinc-400'
+      }`}
     >
       {icone ?? <IconCode />}
       {!mini && titulo}

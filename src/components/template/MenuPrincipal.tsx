@@ -3,6 +3,7 @@ import {
   IconLetterCase,
   IconMathGreater,
   IconNumbers,
+  IconRefreshAlert,
   IconUsers,
 } from '@tabler/icons-react';
 import Logo from './Logo';
@@ -47,6 +48,12 @@ export default function MenuPrincipal() {
           url: '/essenciais/countChar',
           tag: 'useEffect',
           icone: <IconLetterCase />,
+        },
+        {
+          titulo: 'State vs Ref',
+          url: '/essenciais/stateVsRef',
+          tag: 'useRef',
+          icone: <IconRefreshAlert />,
         },
       ],
     },
