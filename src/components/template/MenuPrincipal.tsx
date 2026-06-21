@@ -55,6 +55,12 @@ export default function MenuPrincipal() {
           tag: 'useRef',
           icone: <IconRefreshAlert />,
         },
+        {
+          titulo: 'Contar Caracteres Ref',
+          url: '/essenciais/countCharRef',
+          tag: 'useRef',
+          icone: <IconLetterCase />,
+        },
       ],
     },
   ];
