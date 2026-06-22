@@ -1,4 +1,5 @@
 import {
+  IconAppWindow,
   IconArrowsLeftRight,
   IconLetterCase,
   IconMathGreater,
@@ -17,7 +18,7 @@ export default function MenuPrincipal() {
   const secoes = [
     {
       titulo: 'Essenciais',
-      aberta: true,
+      aberta: false,
       itens: [
         {
           titulo: 'Contador',
@@ -60,6 +61,18 @@ export default function MenuPrincipal() {
           url: '/essenciais/countCharRef',
           tag: 'useRef',
           icone: <IconLetterCase />,
+        },
+      ],
+    },
+    {
+      titulo: 'Personalizados',
+      aberta: true,
+      itens: [
+        {
+          titulo: 'Modal',
+          url: '/customs/modal',
+          tag: 'personalizados',
+          icone: <IconAppWindow />,
         },
       ],
     },
